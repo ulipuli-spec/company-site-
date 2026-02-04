@@ -16,7 +16,7 @@
 <polygon points="46,105 70,105 94,15 70,15" fill="url(#lg2)"/>
 <polygon points="72,105 96,105 120,15 96,15" fill="url(#lg3)"/>
 
-<text x="150" y="78"
+<text x="110" y="78"
 font-family="IBM Plex Sans, Arial, sans-serif"
 font-size="44"
 font-weight="700"
