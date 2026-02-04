@@ -1,0 +1,18 @@
+<svg viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="lg1" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#0b2456"/><stop offset="100%" stop-color="#1e4fa3"/>
+</linearGradient>
+<linearGradient id="lg2" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1e4fa3"/><stop offset="100%" stop-color="#4f6fc4"/>
+</linearGradient>
+<linearGradient id="lg3" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#7f96cf"/><stop offset="100%" stop-color="#d9e0ef"/>
+</linearGradient>
+</defs>
+<polygon points="20,15 36,15 60,105 44,105" fill="url(#lg1)"/>
+<polygon points="46,15 62,15 86,105 70,105" fill="url(#lg2)"/>
+<polygon points="72,15 88,15 112,105 96,105" fill="url(#lg3)"/>
+<text x="140" y="78" font-family="IBM Plex Sans, Arial, sans-serif"
+font-size="44" font-weight="700" fill="#1e4fa3">АЛЬЯНС ГРУПП</text>
+</svg>
