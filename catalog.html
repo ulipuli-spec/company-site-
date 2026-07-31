@@ -1,20 +1,149 @@
-<header class="hero">
-    <div class="container">
-        <h1>Каталог продукции</h1>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каталог продукции — Альянс Групп</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f6f9;color:#222}
+header{background:#0b4d91;color:#fff;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
+header input{width:320px;padding:10px;border-radius:6px;border:none}
+.manufacturers{display:flex;gap:10px;padding:15px 20px;background:#fff;border-bottom:1px solid #ddd;overflow:auto}
+.brand{padding:10px 18px;border:1px solid #0b4d91;border-radius:8px;color:#0b4d91;cursor:pointer;white-space:nowrap}
+.brand.active{background:#0b4d91;color:#fff}
+.layout{display:grid;grid-template-columns:260px 1fr 300px;height:calc(100vh - 120px)}
+.sidebar,.basket{background:#fff;padding:15px;overflow:auto}
+.sidebar{border-right:1px solid #ddd}
+.basket{border-left:1px solid #ddd}
+.category{padding:8px 10px;margin:4px 0;border-radius:6px;cursor:pointer}
+.category:hover,.category.active{background:#e8f1fb;color:#0b4d91;font-weight:bold}
+.content{padding:15px;overflow:auto}
+table{width:100%;border-collapse:collapse;background:#fff}
+th,td{padding:10px;border-bottom:1px solid #e5e5e5;text-align:left}
+th{background:#eef4fb;position:sticky;top:0}
+input.qty{width:70px;padding:6px}
+button{background:#0b4d91;color:#fff;border:none;border-radius:6px;padding:7px 12px;cursor:pointer}
+button:hover{opacity:.9}
+.basket h3{margin-top:0}
+.item{padding:8px 0;border-bottom:1px solid #eee}
+.send{width:100%;margin-top:15px;padding:12px;font-size:15px}
+@media(max-width:900px){
+.layout{grid-template-columns:1fr}
+.sidebar,.basket{display:none}
+header{flex-direction:column;gap:10px}
+header input{width:100%}
+}
+</style>
+</head>
+<body>
 
-        <p style="margin-top:20px;">
-            Раздел находится в стадии наполнения.
-        </p>
-
-        <p>
-            Уже сейчас вы можете отправить заявку на подбор необходимых материалов.
-        </p>
-
-        <a class="btn" href="mailto:info@alngrp.ru?subject=Запрос%20на%20подбор%20продукции">
-            Отправить заявку
-        </a>
-    </div>
+<header>
+<div><strong>АЛЬЯНС ГРУПП</strong> — Каталог продукции</div>
+<input placeholder="Поиск по артикулу или названию">
 </header>
+
+<div class="manufacturers">
+<div class="brand active">VALTEC</div>
+<div class="brand">STOUT</div>
+<div class="brand">ROMMER</div>
+<div class="brand">REHAU</div>
+<div class="brand">LD</div>
+<div class="brand">FV-Plast</div>
+</div>
+
+<div class="layout">
+
+<div class="sidebar">
+<h3>Категории</h3>
+
+<div class="category active">Полипропилен</div>
+<div class="category">Латунные фитинги</div>
+<div class="category">Запорная арматура</div>
+<div class="category">Коллекторы</div>
+<div class="category">Трубы</div>
+<div class="category">Теплый пол</div>
+<div class="category">Инструмент</div>
+
+</div>
+
+<div class="content">
+
+<table>
+<thead>
+<tr>
+<th>Артикул</th>
+<th>Наименование</th>
+<th>Размер</th>
+<th>Ед.</th>
+<th>Кол-во</th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>VTm.202</td>
+<td>Муфта PP-R</td>
+<td>20 мм</td>
+<td>шт</td>
+<td><input class="qty" value="100"></td>
+<td><button>+</button></td>
+</tr>
+
+<tr>
+<td>VTm.203</td>
+<td>Муфта PP-R</td>
+<td>25 мм</td>
+<td>шт</td>
+<td><input class="qty" value="50"></td>
+<td><button>+</button></td>
+</tr>
+
+<tr>
+<td>VTm.204</td>
+<td>Муфта PP-R</td>
+<td>32 мм</td>
+<td>шт</td>
+<td><input class="qty" value="20"></td>
+<td><button>+</button></td>
+</tr>
+
+<tr>
+<td>VTm.205</td>
+<td>Муфта PP-R</td>
+<td>40 мм</td>
+<td>шт</td>
+<td><input class="qty" value="10"></td>
+<td><button>+</button></td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="basket">
+
+<h3>Заявка</h3>
+
+<div class="item">
+Муфта PP-R 20 мм<br>
+100 шт
+</div>
+
+<div class="item">
+Муфта PP-R 25 мм<br>
+50 шт
+</div>
+
+<button class="send">Отправить заявку</button>
+
+</div>
+
+</div>
 
 </body>
 </html>
