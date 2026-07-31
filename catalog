@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каталог продукции | Альянс Групп</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="container">
+        <h1>Каталог продукции</h1>
+
+        <p style="margin-top:20px;">
+            Раздел находится в стадии наполнения.
+        </p>
+
+        <p>
+            Уже сейчас вы можете отправить заявку на подбор необходимых материалов.
+        </p>
+
+        <a class="btn" href="mailto:info@alngrp.ru?subject=Запрос%20на%20подбор%20продукции">
+            Отправить заявку
+        </a>
+    </div>
+</header>
+
+</body>
+</html>
